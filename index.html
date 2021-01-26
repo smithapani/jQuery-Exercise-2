@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise2</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	<div>
+		<input type="text" name="firstname" id="firstname" placeholder="First Name" autofocus required>
+		<input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+		<input type="text" name="color" id="color" placeholder="#Background Color" required>
+		<select type="text"  name="fontsize" id="fontsize" required >
+			<option>Text Size</option>
+			<option value="large">Large</option>
+			<option value="medium">Medium</option>
+			<option value="small">Small</option>
+		</select>
+		<input type="button" name="btn" id="btn" value="Add" >
+	</div>
+
+	<div>
+		<table id="data_table" style="margin-top: 20px;">
+			<tr id="defaultRow" style="visibility:hidden;">
+				<td>
+					<input type="checkbox" name="chk_row" id="chk_row" >	
+				</td>
+				<td>
+					Select All
+				</td>
+				<td>
+					Total <span id="selectedRows">0</span> selected row(s)
+				</td>
+				<td>
+					<input type='button' value='Delete'  style='background-color:red;'>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	
+    <script  src="script.js" type="text/javascript"></script>
+    
+</body>
+</html>
